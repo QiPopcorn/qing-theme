@@ -176,7 +176,7 @@
     "editorHint.foreground": "#4d9375",
     "editorGutter.commentRangeForeground": "#dedcd530",
     "editorGutter.foldingControlForeground": "#dedcd590",
-    "editorInlayHint.foreground": "#666666",
+    "editorInlayHint.foreground": "#777777",
     "editorInlayHint.background": "#00000000",
     "menu.background": "#454545"
   },
@@ -219,7 +219,7 @@
         "punctuation"
       ],
       "settings": {
-        "foreground": "#666666"
+        "foreground": "#777777"
       }
     },
     {
@@ -682,67 +682,67 @@
     },
     {
       "token": "delimiter.bracket",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "delimiter",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "invalid.illegal.character-not-allowed-here.html",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "keyword.operator.rest",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "keyword.operator.spread",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "keyword.operator.type.annotation",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "keyword.operator.relational.ts",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.brace",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.tag.block.any.html",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.tag.inline.any.html",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.tag.structure.input.void.html",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.type.annotation",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "storage.type.function.arrow",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "keyword.operator.type",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "meta.objectliteral.ts",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "punctuation",
-      "foreground": "666666"
+      "foreground": "777777"
     },
     {
       "token": "constant",
