@@ -1,4 +1,4 @@
-# QiPopcorn README
+# Qing Dark Theme
 
 ## Something
 

@@ -2,7 +2,7 @@
   "publisher": "QiPopcorn",
   "name": "qing-dark-theme",
   "displayName": "Qing Dark Theme",
-  "description": "SelfColorTheme",
+  "description": "A bottle-green theme",
   "version": "0.0.1",
   "license": "MIT",
   "engines": {
@@ -10,6 +10,12 @@
   },
   "categories": [
     "Themes"
+  ],
+  "icon": "icon.png",
+  "keywords": [
+    "theme",
+    "dark",
+    "qing"
   ],
   "contributes": {
     "themes": [
@@ -25,7 +31,6 @@
     "url": "https://github.com/QiPopcorn/qing-theme"
   },
   "scripts": {
-    "vscode:prepublish": "",
-    "prepublishOnly": "npm run build"
+    "vscode:prepublish": ""
   }
 }
