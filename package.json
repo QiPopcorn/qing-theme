@@ -1,6 +1,6 @@
 {
   "name": "qi-popcorn",
-  "displayName": "QiNg Dark Theme",
+  "displayName": "Qing Dark Theme",
   "description": "SelfColorTheme",
   "version": "0.0.1",
   "engines": {
@@ -12,10 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "QiNg Dark Theme",
+        "label": "Qing Dark Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/qing-dark-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }
