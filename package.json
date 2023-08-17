@@ -4,6 +4,7 @@
   "displayName": "Qing Dark Theme",
   "description": "A bottle-green theme",
   "version": "0.0.2",
+  "type": "module",
   "license": "MIT",
   "engines": {
     "vscode": "^1.69.0"
@@ -31,6 +32,18 @@
     "url": "https://github.com/QiPopcorn/qing-theme"
   },
   "scripts": {
-    "vscode:prepublish": ""
+    "build": "esno src/index.ts",
+    "vscode:prepublish": "pnpm run build"
+  },
+  "devDependencies": {
+    "@antfu/utils": "^0.7.6",
+    "@types/color": "^3.0.3",
+    "@types/node": "^18.16.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "color": "^4.2.3",
+    "eslint": "^8.47.0",
+    "esno": "^0.17.0",
+    "typescript": "^5.1.6"
   }
 }
