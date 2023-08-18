@@ -36,9 +36,9 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             'activityBar.activeBorder': background,
             'activityBar.background': background,
             'activityBar.border': border,
-            'activityBar.foreground': vitesse('primary'),
+            'activityBar.foreground': primary,
             'activityBar.inactiveForeground': vitesse('primary', '80'),
-            'activityBarBadge.background': vitesse('primary'),
+            'activityBarBadge.background': primary,
             'activityBarBadge.foreground': secondaryBackground,
             'badge.background': vitesse('secondaryForeground'),
             'badge.foreground': secondaryBackground,
@@ -50,7 +50,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             'button.foreground': secondaryBackground,
             'button.hoverBackground': vitesse('green'),
             'checkbox.background': lowBackground,
-            'checkbox.border': vitesse('primary'),
+            'checkbox.border': primary,
             'debugToolBar.background': lowBackground,
             descriptionForeground: vitesse('secondaryForeground'),
             'diffEditor.insertedTextBackground': vitesse('green', '22'),
@@ -91,8 +91,8 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             'editorIndentGuide.background': pick({ dark: primer.white }, '15'),
             'editorInfo.foreground': vitesse('blue'),
             'editorInlayHint.background': pick({ dark: primer.black }, '00'),
-            'editorInlayHint.foreground': pick({ dark: '#777777' }),
-            'editorLineNumber.activeForeground': vitesse('primary'),
+            'editorInlayHint.foreground': vitesse('annotation'),
+            'editorLineNumber.activeForeground': primary,
             'editorLineNumber.foreground': vitesse('primary', '80'),
             'editorOverviewRuler.border': pick({ dark: primer.black }),
             'editorSuggestWidget.highlightForeground': vitesse('ansiBrightGreen'),
@@ -170,7 +170,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             'statusBarItem.prominentBackground': lowBackground,
             'statusBarItem.remoteBackground': vitesse('ansiCyan'),
             'tab.activeBackground': secondaryBackground,
-            'tab.activeBorder': vitesse('primary'),
+            'tab.activeBorder': primary,
             'tab.activeForeground': foreground,
             'tab.border': border,
             'tab.hoverBackground': lowBackground,
@@ -220,7 +220,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
                 settings: {
-                    foreground: '#758575DD',
+                    foreground: vitesse('comment'),
                 },
             },
             {
@@ -243,19 +243,19 @@ export default function getTheme({ style, name, soft = false, black = false }) {
                     'punctuation',
                 ],
                 settings: {
-                    foreground: '#777777',
+                    foreground: vitesse('annotation'),
                 },
             },
             {
                 scope: ['constant', 'entity.name.constant', 'variable.language', 'meta.definition.variable'],
                 settings: {
-                    foreground: '#C99076',
+                    foreground: vitesse('constant'),
                 },
             },
             {
                 scope: ['entity', 'entity.name'],
                 settings: {
-                    foreground: '#80A665',
+                    foreground: vitesse('function'),
                 },
             },
             {
@@ -273,7 +273,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: 'entity.name.function',
                 settings: {
-                    foreground: '#80A665',
+                    foreground: vitesse('function'),
                 },
             },
             {
@@ -297,49 +297,49 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: ['string', 'string punctuation.section.embedded source', 'attribute.value'],
                 settings: {
-                    foreground: '#C98A7D',
+                    foreground: vitesse('string'),
                 },
             },
             {
                 scope: ['punctuation.definition.string', 'punctuation.support.type.property-name'],
                 settings: {
-                    foreground: '#C98A7DAA',
+                    foreground: vitesse('string', 'AA'),
                 },
             },
             {
                 scope: 'support',
                 settings: {
-                    foreground: '#B8A965',
+                    foreground: vitesse('property'),
                 },
             },
             {
                 scope: ['property', 'meta.property-name', 'meta.object-literal.key', 'entity.name.tag.yaml', 'attribute.name'],
                 settings: {
-                    foreground: '#B8A965',
+                    foreground: vitesse('property'),
                 },
             },
             {
                 scope: ['entity.other.attribute-name', 'invalid.deprecated.entity.other.attribute-name.html'],
                 settings: {
-                    foreground: '#BD976A',
+                    foreground: vitesse('variable'),
                 },
             },
             {
                 scope: ['variable', 'identifier'],
                 settings: {
-                    foreground: '#BD976A',
+                    foreground: vitesse('variable'),
                 },
             },
             {
                 scope: ['support.type.primitive', 'entity.name.type'],
                 settings: {
-                    foreground: '#5DA9A7',
+                    foreground: vitesse('type'),
                 },
             },
             {
                 scope: 'namespace',
                 settings: {
-                    foreground: '#DB889A',
+                    foreground: vitesse('namespace'),
                 },
             },
             {
@@ -351,43 +351,43 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: 'invalid.broken',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                     fontStyle: 'italic',
                 },
             },
             {
                 scope: 'invalid.deprecated',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                     fontStyle: 'italic',
                 },
             },
             {
                 scope: 'invalid.illegal',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                     fontStyle: 'italic',
                 },
             },
             {
                 scope: 'invalid.unimplemented',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                     fontStyle: 'italic',
                 },
             },
             {
                 scope: 'carriage-return',
                 settings: {
-                    foreground: '#24292E',
-                    background: '#F97583',
+                    foreground: pick({ dark: primer.gray[9] }),
+                    background: pick({ dark: primer.red[3] }),
                     fontStyle: 'italic underline',
                 },
             },
             {
                 scope: 'message.error',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                 },
             },
             {
@@ -399,13 +399,13 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: 'string variable',
                 settings: {
-                    foreground: '#C98A7D',
+                    foreground: vitesse('string'),
                 },
             },
             {
                 scope: ['source.regexp', 'string.regexp'],
                 settings: {
-                    foreground: '#C4704F',
+                    foreground: vitesse('regex'),
                 },
             },
             {
@@ -416,7 +416,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
                     'string.regexp string.regexp.arbitrary-repitition',
                 ],
                 settings: {
-                    foreground: '#C98A7D',
+                    foreground: vitesse('string'),
                 },
             },
             {
@@ -428,31 +428,31 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: ['support.constant'],
                 settings: {
-                    foreground: '#C99076',
+                    foreground: vitesse('constant'),
                 },
             },
             {
                 scope: ['constant.numeric', 'number'],
                 settings: {
-                    foreground: '#4C9A91',
+                    foreground: vitesse('number'),
                 },
             },
             {
                 scope: ['keyword.other.unit'],
                 settings: {
-                    foreground: vitesse('errorForeground'),
+                    foreground: vitesse('builtin'),
                 },
             },
             {
                 scope: ['constant.language.boolean', 'constant.language'],
                 settings: {
-                    foreground: vitesse('green'),
+                    foreground: vitesse('boolean'),
                 },
             },
             {
                 scope: 'meta.module-reference',
                 settings: {
-                    foreground: vitesse('green'),
+                    foreground: primary,
                 },
             },
             {
@@ -464,14 +464,14 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: ['markup.heading', 'markup.heading entity.name'],
                 settings: {
-                    foreground: vitesse('green'),
+                    foreground: primary,
                     fontStyle: 'bold',
                 },
             },
             {
                 scope: 'markup.quote',
                 settings: {
-                    foreground: '#5DA994',
+                    foreground: vitesse('interface'),
                 },
             },
             {
@@ -491,61 +491,61 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: 'markup.raw',
                 settings: {
-                    foreground: vitesse('green'),
+                    foreground: primary,
                 },
             },
             {
                 scope: ['markup.deleted', 'meta.diff.header.from-file', 'punctuation.definition.deleted'],
                 settings: {
-                    foreground: '#FDAEB7',
-                    background: '#86181D',
+                    foreground: pick({ dark: primer.red[2] }),
+                    background: pick({ dark: primer.red[9] }),
                 },
             },
             {
                 scope: ['markup.inserted', 'meta.diff.header.to-file', 'punctuation.definition.inserted'],
                 settings: {
-                    foreground: '#85E89D',
-                    background: '#144620',
+                    foreground: pick({ dark: primer.green[3] }),
+                    background: pick({ dark: primer.green[9] }),
                 },
             },
             {
                 scope: ['markup.changed', 'punctuation.definition.changed'],
                 settings: {
-                    foreground: '#FFAB70',
-                    background: '#C24E00',
+                    foreground: pick({ dark: primer.orange[3] }),
+                    background: pick({ dark: primer.orange[8] }),
                 },
             },
             {
                 scope: ['markup.ignored', 'markup.untracked'],
                 settings: {
                     foreground: pick({ dark: primer.gray[8] }),
-                    background: '#79B8FF',
+                    background: pick({ dark: primer.blue[3] }),
                 },
             },
             {
                 scope: 'meta.diff.range',
                 settings: {
-                    foreground: '#B392F0',
+                    foreground: pick({ dark: primer.purple[3] }),
                     fontStyle: 'bold',
                 },
             },
             {
                 scope: 'meta.diff.header',
                 settings: {
-                    foreground: '#79B8FF',
+                    foreground: pick({ dark: primer.blue[3] }),
                 },
             },
             {
                 scope: 'meta.separator',
                 settings: {
-                    foreground: '#79B8FF',
+                    foreground: pick({ dark: primer.blue[3] }),
                     fontStyle: 'bold',
                 },
             },
             {
                 scope: 'meta.output',
                 settings: {
-                    foreground: '#79B8FF',
+                    foreground: pick({ dark: primer.blue[3] }),
                 },
             },
             {
@@ -558,13 +558,13 @@ export default function getTheme({ style, name, soft = false, black = false }) {
                     'brackethighlighter.quote',
                 ],
                 settings: {
-                    foreground: '#D1D5DA',
+                    foreground: pick({ dark: primer.gray[3] }),
                 },
             },
             {
                 scope: 'brackethighlighter.unmatched',
                 settings: {
-                    foreground: '#FDAEB7',
+                    foreground: pick({ dark: primer.red[2] }),
                 },
             },
             {
@@ -575,7 +575,7 @@ export default function getTheme({ style, name, soft = false, black = false }) {
                     'punctuation.definition.string.end.markdown',
                 ],
                 settings: {
-                    foreground: '#C98A7D',
+                    foreground: vitesse('string'),
                 },
             },
             {
@@ -588,13 +588,13 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: ['type.identifier'],
                 settings: {
-                    foreground: '#6893BF',
+                    foreground: vitesse('class'),
                 },
             },
             {
                 scope: ['entity.other.attribute-name.html.vue'],
                 settings: {
-                    foreground: '#80A665',
+                    foreground: vitesse('function'),
                 },
             },
             {
@@ -606,25 +606,25 @@ export default function getTheme({ style, name, soft = false, black = false }) {
             {
                 scope: 'token.info-token',
                 settings: {
-                    foreground: '#6796E6',
+                    foreground: vitesse('info'),
                 },
             },
             {
                 scope: 'token.warn-token',
                 settings: {
-                    foreground: '#CD9731',
+                    foreground: vitesse('warn'),
                 },
             },
             {
                 scope: 'token.error-token',
                 settings: {
-                    foreground: '#F44747',
+                    foreground: vitesse('error'),
                 },
             },
             {
                 scope: 'token.debug-token',
                 settings: {
-                    foreground: '#B267E6',
+                    foreground: vitesse('debug'),
                 },
             },
         ],

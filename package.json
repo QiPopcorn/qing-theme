@@ -3,7 +3,7 @@
   "name": "qing-dark-theme",
   "displayName": "Qing Dark Theme",
   "description": "A bottle-green theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -33,7 +33,9 @@
   },
   "scripts": {
     "build": "esno src/index.ts",
-    "vscode:prepublish": "pnpm run build"
+    "vscode:prepublish": "pnpm run build",
+    "prepack": "vsce package --no-dependencies",
+    "release": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@antfu/utils": "^0.7.6",
