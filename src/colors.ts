@@ -55,4 +55,18 @@ export const VitesseThemes = {
     orange: ['#d4976c'],
     yellow: ['#e6cc77'],
     magenta: ['#d9739f'],
+
+    ansiBlack: ['#282a2e'],
+    ansiBlue: ['#5f819d'],
+    ansiCyan: ['#5e8d87'],
+    ansiRed: ['#a54242'],
+    ansiWhite: ['#707880'],
+    ansiYellow: ['#de935f'],
+    ansiBrightBlack: ['#707880'],
+    ansiBrightBlue: ['#81a2be'],
+    ansiBrightCyan: ['#8abeb7'],
+    ansiBrightGreen: ['#b5bd68'],
+    ansiBrightRed: ['#cc6666'],
+    ansiBrightWhite: ['#c5c8c6'],
+    ansiBrightYellow: ['#f0c674'],
 };
